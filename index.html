@@ -6,9 +6,31 @@
   <title>Challenge: Famous font formats</title>
   <style>
 
+    body {text-align: center;}
+
+    img {width: 300px;}
+
+    p {width: 300px;}
+
+    h2 {width: 620px;
+        background-color: cadetblue;
+        margin-left: auto;
+        margin-right: auto;}
+
     .declaration {font-weight: bolder;}
 
-    .quote {font-style: oblique;}
+    .quote {font-style: italic;}
+    
+    .big {justify-content: center;
+          margin-right: auto;
+          margin-left: auto;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 10px;
+          background-color: cadetblue;
+          max-width: 620px;
+          border: 10px;}
 
   </style>
 </head>
@@ -16,21 +38,35 @@
 <body>
 
   <h2>Famous quotes</h2>
-  <p class="quote">
-    "My mama always said life was like a box of chocolates. You never know what you're gonna get.".
-    <br> - Forrest Gump
-  </p>
 
-  <p class="quote">
-    "May the force be with you."
-    <br>- Star Wars
-  </p>
+  <div class="big">
+    <div>
+      <img src="https://m.media-amazon.com/images/I/91++WV6FP4L._AC_UF1000,1000_QL80_.jpg">
+    </div>
+    <div>
+      <p class="quote">"My mama always said life was like a box of chocolates. You never know what you're gonna get.".<br> - Forrest Gump</p>
+    </div>
+  </div>
+
+  <div class="big">
+    <div>
+      <img src="https://i.etsystatic.com/24635155/r/il/66a0ca/3992729956/il_fullxfull.3992729956_7wwp.jpg">
+    </div>
+    <div>
+      <p class="quote">"May the force be with you."<br>- Star Wars</p>
+    </div>
+  </div>
 
   <h2>Famous declarations</h2>
 
-  <p class="declaration">
-    I'M BATMAN.
-  </p>
+  <div class="big">
+    <div>
+      <img src="https://m.media-amazon.com/images/M/MV5BYzZmZWViM2EtNzhlMi00NzBlLWE0MWEtZDFjMjk3YjIyNTBhXkEyXkFqcGc@._V1_.jpg">
+    </div>
+    <div>
+      <p class="declaration">I'M BATMAN.</p>
+    </div>
+  </div>
 
   <p class="declaration">
     Earth, water, fire. Together, we are CAPTAIN PLANET!
